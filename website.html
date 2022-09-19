@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Morning Rise | The best fitness studio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .home{
+            width: 100%;
+            min-height: 100vh;
+            background: url("IMG_9464.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            
+        }
+        .blur{
+            background: rgba(255, 255, 255, 0.063);
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .services{
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .gallery{
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background: url("istockphoto-928250848-170667a.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .gallery .subgallery{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .aboutus{
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background: url("Blurred-of-fitness-gym-background-1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;   
+        }
+        .contactus{
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            background: url("contact us.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .navbar ul li{
+            display: inline-flex;
+            list-style: none;
+            margin-left: 18px;
+            margin-right: 18px;
+            margin-top: 27px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            padding-left: 6px;
+            padding-right: 6px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bolder;
+        }
+        .navbar ul li a:hover{
+            transition: 0.3s;
+            font-size: x-large;
+            background-color: black;
+            color: white;
+        }
+        .navbar .logo{
+            height: 75px;
+            width: 75px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            left: 1%;
+            top: 2px;
+        }
+        .navbar .logo img{
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        .home h1{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            color: white;
+            font-style: italic;
+            font-size: 50px;
+            text-shadow: -1px -1px 25px rgb(75, 134, 150), 1px 1px 50px rgb(75, 134, 150),0px 0px 75px rgb(75, 134, 150);
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+        .home h1 a{
+            position: relative;
+            text-decoration: none;
+            background-color: #0009;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 2px solid rgb(147, 144, 144);
+            font-style: oblique;
+            font-size: 40px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+        .home h1 a:hover{
+            color: red;
+            background-color: rgb(225, 195, 195);
+            transition: 0.35s;
+        }
+        .services h1{
+            width: 100%;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            background-color: black;
+            color: white;
+            font-style: italic;
+            font-size: 50px;
+            text-shadow: -1px -1px 25px rgb(75, 134, 150);
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: black;
+        }
+        .services .serve{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .services .serve .serviceimg{
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0%;
+            left: 0%;
+        }
+        .services .serve .serviceimg .img1{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 50%;
+            width: 100%;
+        }
+        .services .serve .serviceimg .img1 img{  
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+        }
+        .services .serve .serviceimg .img2{       
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 50%;
+            width: 100%;
+        }
+        .services .serve .serviceimg .img2 img{  
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+        }
+        .services .serve .servicetext{
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, rgb(186, 180, 180), rgb(107, 102, 102), rgb(78, 76, 76),  rgb(47, 46, 46));
+            overflow: scroll;
+            scrollbar-base-color: rgb(110, 107, 107);
+            scrollbar-face-color: gray;
+        }
+        .services .serve .servicetext ul li{
+            list-style-type: square;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-top: 15px;
+            /* font-weight: bolder; */
+            /* -webkit-text-stroke-width: 0.2px;
+            -webkit-text-stroke-color: white; */
+        }
+        .services .serve .servicetext ul li h3{
+            color: white;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+            font-family: monospace;
+            font-size: 35px;
+            
+        }
+        .gallery h1{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 55px;
+            color: white;
+            font-style: italic;
+            text-align: center;
+            background-color: #0009;
+            color: white;
+            font-style: italic;
+            font-size: 50px;
+            text-shadow: -1px -1px 25px rgb(75, 134, 150);
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: black;
+        }
+        .gallery .subgallery .imgslider{
+            height: 400px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gallery .subgallery .imgslider .slide{
+            height: 100%;
+            width: 350px;
+            border: 1px solid black;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .gallery .subgallery .imgslider .slide .holder{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 1050px;
+            display: inline-flex;
+            animation: animate 5s linear infinite;
+            transition: 0.8s;
+        }
+        .gallery .subgallery .imgslider .slide img{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 350px;
+            border-radius: 20px;
+        }
+        @keyframes animate{
+            0%{
+                transform: translateX(0%);
+                transition-delay: 0.5s
+            }
+            50%{
+                transform: translateX(-33.35%);
+                transition-delay: 0.5s;
+            }
+            100%{
+                transform: translateX(-66.7%);
+                transition-delay: 0.5s;
+            }
+        }
+        .gallery .subgallery .imgslider #s2 .holder{
+            animation-delay: 0.3s;
+        }
+        .gallery .subgallery .imgslider #s3 .holder{
+            animation-delay: 0.5s;
+        }
+        .gallery .subgallery .imgslider .slide .holder:hover{
+            animation-play-state: paused;
+        }
+        .aboutus h1 span{
+            color: rgb(246, 53, 53);
+        }
+        .aboutus h1{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 35px;
+            color: white;
+            -webkit-text-stroke-width: 1.35px;
+            -webkit-text-stroke-color: black;
+        }
+        .aboutus p{
+            color: white;
+            font-size: medium;
+        }
+        .aboutus .aboutvis{
+            display: flex;
+            justify-content: space-between;
+        }
+        .aboutus .aboutvis .vis{
+            height: 50vh;
+            width: 50%;
+        }
+        .aboutus .aboutvis .aboutimg{
+            height: 50vh;
+            width: 45%;
+            border: 2px solid black;
+            border-radius: 30px;
+            margin-right: 15px;
+        }
+        .aboutus .aboutvis .aboutimg img{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .contactus h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .contactus h1 .sp1{
+            color: white;
+            font-size: 70px;
+            font-style: oblique;
+            text-shadow: -1px -1px 25px rgb(75, 134, 150);
+        }
+        .contactus h1 .sp2{
+            color: rgb(228, 44, 44);
+            font-size: 70px;
+            font-style: oblique;
+            text-shadow: -1px -1px 25px rgb(75, 134, 150);
+        }
+        .contactus .socials{
+            height: 300px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .contactus .footer{
+            background: rgb(56, 54, 54);
+            width: 100vw;
+            color: azure;
+            text-align: center;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            font-weight: 700;
+            border-radius: 150px 150px 0 0;
+        }
+       
+        .contactus .socials span{
+            color: gray;
+            width: 50px;
+            height: 50px;
+        }
+        .contactus .socials span i{
+            position: relative;
+           font-size: 50px;
+           cursor: pointer;
+        }
+        .contactus .socials span i:hover{
+            
+            text-shadow: 0 0 35px white, 0 0 45px white, 0 0 55px white;
+            color: white;
+            transition: 0.5s;
+        }
+        .contactus .socials p{
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: oblique;
+        }
+        .home .up{
+            position: fixed;
+            top: 85%;
+            left: 90%;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 50%;
+            z-index: 1;
+        }
+        .home .up span{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            color: white;
+        }
+        .home .up span i{
+            font-size: 60px;
+        }
+        .home .up:hover{
+            transform: scale(1.3);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="home" id="home">
+        <div class="navbar">
+            <div class="logo">
+                <img src="360-3606647_physical-fitness-clipart-physical-fitness-logo-png.png" alt="">
+            </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#prices">Prices/Membership</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+        </div>
+        <div class="blur">
+       
+        
+        <h1>
+            MORNING RISE FITNESS STUDIO
+            <br>
+            <a href="neuromorphic_registration_form.html" target="">JOIN NOW</a>
+        </h1>
+    </div>
+       <div class="up">
+        <a href="#home"><span><i class="fa fa-arrow-up"></i></span></a>
+       </div> 
+    </div>
+    
+    
+    <div class="services" id="services">
+        <h1>OUR SERVICES</h1>
+        <div class="serve">
+        <div class="serviceimg">
+            <div class="img1">
+                <img src="images1353-5d09ab7b966ec-1024x552.jpg" alt="">
+            </div>
+            <div class="img2">
+                <img src="Fitness-photography-anush-gorak.jpeg" alt="">
+            </div>
+        </div>
+        <div class="servicetext">
+            <ul>
+                <li>
+                    <h3>Weight Training</h3>
+                    <br>
+                    From bodybuilding to powerlifting and everything in between, the Fitness Factory has the equipment to help you reach your goals. With dumbells up to 150lbs, 7 squat racks, 5 deadlift platforms, 2 competition benches, and a variety of plate loaded and pin loaded machines, we have everything you need. Gain or Lose Weight Naturally with Weight Management Workouts.
+                </li>
+                
+                <li>
+                    <h3>General Fitness</h3>
+                    <br>
+                    If your goals are to improve your overall health and wellness, we have everything you need.  We have cardio equipment spanning two floors including 8 stepmills, 15+ treadmills, row machines, exercise bikes, spin bikes, ellipticals, arc trainers and even a Jacob's Ladder. In addition to cardio equipment, we have stretching areas with mats, foam rollers, bands, light weights, and much more. Unleash the Beast in You with Our Strength Enhancement Workouts.
+                </li>
+                
+                <li>
+                    <h3>Functional Training</h3>
+                    <br>
+                    With 60 feet of turf with a sled, stackable plyometric boxes, weighted medicine balls, battle ropes, squat racks, and deadlift platforms our functional training room has all the equipment you need to take your training to the next level. Enhance Your Strength and Endurance with Various CrossFit Workouts.
+                </li>
+                
+                <li>
+                    <h3>Dedicated Yoga Training</h3>
+                    <br>
+                    We mix science and Yoga and offer you the scientific Yoga techniques. Experience the depth of knowledge from experts across all areas of yoga. Explore hundreds of classes & member-only courses physically and digitally, with new content added weekly. Take classes at your own pace, on your own time, and on any device.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="gallery" id="gallery">
+        <h1>OUR GALLERY</h1>
+        <div class="subgallery">
+        <div class="imgslider">
+            <div id="s1" class="slide">
+                <div class="holder">
+                <img src="1.jpeg" alt="">
+                <img src="2.jpg" alt="">
+                <img src="3.jpg" alt="">
+                </div>
+            </div>
+            <div id="s2" class="slide">
+                <div class="holder">
+                    <img src="4.jpg" alt="">
+                    <img src="5.jpg" alt="">
+                    <img src="6.jpg" alt="">
+                </div>
+            </div>
+            <div id="s3" class="slide">
+                <div class="holder">
+                    <img src="7.jpg" alt="">
+                    <img src="8.jpg" alt="">
+                    <img src="9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="aboutus" id="aboutus">
+        <h1>About<span> Us</span></h1>
+        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa beatae aliquam. Assumenda quibusdam, pariatur iste quisquam explicabo voluptatum delectus, ratione animi consequatur aliquam inventore recusandae nihil molestias totam et?
+            Soluta molestiae ea consequuntur nisi, inventore incidunt, veritatis, dolorem doloremque hic fuga dolores delectus provident dignissimos! Enim quia ut tempora corporis non debitis consequatur amet saepe, libero eos neque officiis?
+            Repellat sit, atque, quidem aperiam soluta nesciunt eius qui non tempora impedit ipsum cum quo, eligendi odit corrupti laudantium? Fugit ipsa doloribus voluptas, ex atque fuga quia officiis iure vitae!
+            Cum, sequi temporibus inventore, voluptatem harum tempora ratione vero fugiat iure voluptas officiis. Quaerat a nobis expedita quam! Aspernatur fugit quisquam beatae possimus tenetur hic, ea odit consectetur. Vel, fuga.
+            Iusto quisquam recusandae tenetur aliquam mollitia vel accusamus quam doloremque. Pariatur distinctio perferendis quos sint ipsam voluptatibus cupiditate iste rerum id velit reiciendis, aut nostrum, ratione vero delectus eos libero!
+            Officiis unde quidem modi cum quia enim perspiciatis eum, asperiores adipisci corrupti aliquid debitis, quas exercitationem maiores quisquam sit sapiente voluptatibus temporibus, cupiditate quo dolore saepe nemo? Vero, veniam laboriosam.
+            
+        </p>
+        <h1><span>Our</span> Vision</h1>
+        <div class="aboutvis">
+            
+            <div class="vis">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci, esse hic vitae soluta libero unde, vel deserunt delectus iure architecto pariatur amet. Facere id odit, doloribus quod laudantium aliquam.
+            Natus error consectetur, facilis illo incidunt suscipit corrupti aliquid hic quibusdam fugiat minus? Praesentium, adipisci? Labore repellendus consequatur iste, debitis natus, accusantium aperiam ab, laborum quod deserunt voluptates atque temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi sit tempore at quos voluptatibus repellendus facilis reiciendis molestias hic nihil cupiditate consequatur delectus dolorem ad, reprehenderit facere quia sint!
+            Cumque temporibus nobis veniam corporis illum, voluptatum tempore praesentium illo reprehenderit repellat, mollitia voluptatem eos repudiandae soluta dolor numquam quibusdam hic! Odio corrupti consequuntur, quo dicta in minus ducimus nihil!
+                </p>
+            </div>
+            
+            <div class="aboutimg">
+                <img src="working-out-in-the-gym.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="contactus" id="contactus">
+        <h1><span class="sp1">Contact Us | </span><span class="sp2">Reach Out To Us</span></h1>
+        <div class="socials">
+            <p>Follow Us On:-</p>
+                <a href="#"><span><i class="fa fa-facebook"></i></span></a>
+                <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+                <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                <a href="#"><span><i class="fa fa-youtube"></i></span></a>
+                <a href="#"><span><i class="fa fa-location-arrow"></i></span></a>
+        </div>
+        <div class="footer">
+            © Copyright Morning Rise Fitness Studio 2022. All Right Reserved.
+        </div>
+    </div>
+</body>
+</html>

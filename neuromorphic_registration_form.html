@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Star | Registration Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+            background: gray;
+        }
+        .login{
+            position: absolute;
+            top: 20%;
+            left: 42%;
+            border-radius: 10px;
+            height: 450px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: -3px -4px 9px rgb(163, 160, 160), 3px 4px 9px rgb(69, 67, 67)
+        }
+        .login h1{
+            border-bottom: 2px solid black;
+            color: rgb(68, 54, 54);
+            text-shadow: -3px -3px 3px rgb(163 160 160), 3px 3px 3px rgb(27 24 24);
+            letter-spacing: 7px;
+            width: 100%;
+        }
+        .text input{
+            background: none;
+            border: none;
+            border-bottom: 2px solid black;
+            overflow: hidden;
+            outline: none;
+            margin-top: 20px;
+        }
+        .text input::-webkit-input-placeholder{
+            color: black;
+        }
+        .btn{
+            margin-top: 20px;
+        }
+        .btn input{
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background: #0003;
+            cursor: pointer;
+            box-shadow: -3px -4px 5px rgb(200, 192, 192), 3px 4px 5px rgb(57, 53, 53);
+        }
+        .btn input:active{
+            box-shadow: -3px -4px 5px rgb(200, 192, 192) inset, 3px 4px 5px rgb(57, 53, 53) inset;
+            color: rgb(59, 239, 221);
+
+        }
+        .login:hover{
+            box-shadow: -3px -4px 9px rgb(163, 160, 160) inset, 3px 4px 9px rgb(69, 67, 67) inset;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="login">
+        <h1>REGISTER</h1>
+        <div class="text">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="text">
+            <input type="text" placeholder="Phone Number">
+        </div>
+        <div class="text">
+            <input type="text" placeholder="Address">
+        </div>
+        <div class="text">
+            <input type="text" placeholder="Enter Email ID">
+        </div>
+        <div class="text">
+            <input type="text" placeholder="Confirm Email ID">
+        </div>
+        <div class="text">
+            <input type="password" placeholder="Enter Password">
+        </div>
+        <div class="text">
+            <input type="password" placeholder="Confirm Password">
+        </div>
+        <div class="btn">
+            <input type="button" value="Register">
+        </div>
+    </div>
+</body>
+</html>
